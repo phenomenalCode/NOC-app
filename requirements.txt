@@ -1,0 +1,37 @@
+# ── sentinel.sh · python requirements ──────────────────────────────
+#   install:  pip install -r requirements.txt
+#
+#   The core loop (steps 00–03) needs only ONE package. Everything
+#   else you import in the weekend build is Python's standard library
+#   (dataclasses, enum, datetime, json, sqlite3, collections, ipaddress).
+#   Uncomment each phase's block as you reach that step.
+# ────────────────────────────────────────────────────────────────────
+
+# ── core loop · THE WEEKEND (steps 00–03) ──
+rich                          # 03 · colored terminal output
+
+# ── nice to have from day one ──
+python-dotenv                 # load config/secrets from a .env file
+pytest                        # tests/
+
+# "mac_vendor": vendor_lookup(identity),   # TODO step 05: pip install manuf
+# ── step 04 · web layer (Python side; React is separate) ──
+# fastapi
+# uvicorn[standard]
+# websockets
+
+# ── step 05 · config + scheduling ──
+# pyyaml
+# apscheduler<4                # pin to the v3 API (BackgroundScheduler.add_job)
+
+# ── step 06 · health + metrics ──
+# prometheus-client
+# psutil
+# httpx
+
+# ── step 07 · llm analyst ──
+# ollama
+
+# ── step 08 · mascot glow (runs on the Raspberry Pi only) ──
+# adafruit-circuitpython-neopixel
+# websockets                   # (already listed under step 04)
