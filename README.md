@@ -1,4 +1,4 @@
-ere are the canonical docs, grouped by the step they show up in on sheet 03. Standard-library links are docs.python.org (rock-stable); third-party I've pointed at the official source for each.
+These are the canonical docs, grouped by the step they show up in on sheet 03. Standard-library links are docs.python.org (rock-stable); third-party I've pointed at the official source for each.
 
 00 · Status contract
 
